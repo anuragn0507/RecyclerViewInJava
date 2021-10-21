@@ -18,14 +18,14 @@ public class ProgrammingAdapter extends RecyclerView.Adapter<ProgrammingAdapter.
 
 
     @Override
-    public ProgrammingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ProgrammingViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.list_item_layout,parent,false);
         return new ProgrammingViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ProgrammingViewHolder holder, int position) {
+    public void onBindViewHolder( ProgrammingViewHolder holder, int position) {
         String title = data[position];
         holder.textView.setText(title);
 
